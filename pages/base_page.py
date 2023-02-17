@@ -9,9 +9,19 @@ class BasePage:
     def open(self, url):
         self.browser.get(url)
 
-    def is_element_present(self, how, what):
+    def element_is_present(self, how, what):
         try:
             self.browser.find_element(how, what)
         except NoSuchElementException:
             return False
         return True
+
+    def elements_are_present(self, how, what):
+        try:
+            self.browser.find_elements(how, what)
+        except NoSuchElementException:
+            return False
+        return True
+
+    def scroll_to_element(self, element):
+        self.browser.execute_script("arguments[0].scrollIntoView();", element)
