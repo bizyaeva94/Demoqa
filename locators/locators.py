@@ -20,3 +20,19 @@ class CheckBoxLocators:
     CHECKED_ITEM = (By.XPATH, "//*[contains(@class, 'rct-icon-check')]/ancestor::label/span[@class='rct-title']")
     SELECTED_RESULT = (By.CSS_SELECTOR, "#result .text-success")
 
+
+class WebTableLocators:
+    HEADER = (By.CSS_SELECTOR, ".rt-thead .rt-th")
+    ROW = (By.CSS_SELECTOR, ".rt-tbody .rt-tr")
+    COL = (By.TAG_NAME, 'div')
+    NOT_EMPTY_ROW = (By.XPATH, "//*[@class='action-buttons']/ancestor::div[@class='rt-tr-group']")
+    ADD_BUTTON = (By.ID, "addNewRecordButton")
+    SUBMIT_BUTTON = (By.ID, "submit")
+    REGISTRATION_FORM = (By.CSS_SELECTOR, ".modal-content")
+    INPUT_FIRST_NAME = (By.CSS_SELECTOR, "input#firstName")
+    INPUT_LAST_NAME = (By.CSS_SELECTOR, "input#lastName")
+    INPUT_EMAIL = (By.CSS_SELECTOR, "input#userEmail")
+    INPUT_AGE = (By.CSS_SELECTOR, "input#age")
+    INPUT_SALARY = (By.CSS_SELECTOR, "input#salary")
+    INPUT_DEPARTMENT = (By.CSS_SELECTOR, "input#department")
+
