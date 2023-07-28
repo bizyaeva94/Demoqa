@@ -21,8 +21,6 @@ class TestTextBox:
         assert output_name[2] == current_address, 'Current address is different'
         assert output_name[3] == permanent_address, 'Permanent address is different'
 
-
-# here is a new feature 2 !
 # here is new feature
 
 
